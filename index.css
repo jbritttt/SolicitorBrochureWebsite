@@ -1,0 +1,298 @@
+
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  letter-spacing: 0.05rem;
+}
+
+
+.hero .hero-title {
+ top:7rem
+ 
+  
+  
+
+}
+
+.hero .hero-title #consultation-btn{
+
+  display:none
+}
+
+.grid-container-1-2 {
+  width: 95%;
+  padding-bottom: 40px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  gap: 20px;
+  text-align: left;
+  display: grid;
+  margin: 60px auto auto;
+}
+
+.grid-container-1-2 p {
+  margin-left: 0;
+  line-height: 1.5rem;
+}
+
+.grid-container-1-2 .grid-items {
+  background-color: #fff;
+  transition: 0.3s;
+  position: relative;
+  width: 100%;
+}
+
+.grid-container-1-2 .grid-items .internal-border {
+  position: absolute;
+  top: 5%;
+  left: 3.2%;
+  width: 83%;
+  height: 83%;
+  border: 1px solid #fff;
+}
+
+.grid-container-1-2 .grid-items #img-1 {
+  width: 90%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.grid-container-1-2 .grid-items #img-2 {
+  position: absolute;
+  right: 5%;
+  bottom: -12px;
+  width: 50%;
+  height: auto;
+  border: 2px solid rgb(207, 207, 207);
+}
+
+.grid-container-1-2 .partner-content-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+ 
+}
+
+.grid-container-1-2 .partner-content-desc {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height:25px;
+  margin-bottom:3rem
+
+}
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+}
+
+.icons-container .icon-wrap img {
+  width: 45px;
+  height: auto;
+  margin-bottom:2rem;
+}
+
+.icons-container .icon-wrap {
+  width: 100%;
+margin-left:1rem;
+  display: flex;
+  align-items: center;
+}
+
+.icons-container .icon-wrap span {
+  width: 30%;
+  margin-left: 2rem;
+  margin-bottom:2rem;
+  font-size: .8rem;
+  font-weight: 600;
+  line-height:20px
+}
+
+
+
+
+#meet-the-team-btn {
+  display: flex;
+  justify-content: space-between;
+  border: 0.125rem solid #af9644;
+  border-radius: 1.875rem;
+
+  width: 160px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.002em;
+  line-height: 1;
+  color: #af9644;
+  padding: 0.8rem;
+  padding-left:2rem;
+  padding-right:2rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+#meet-the-team-btn .icons-wrapper-3 {
+  display: flex;
+  transform: rotate(-90deg);
+  
+  transition: 0.3s ease-in-out;
+}
+
+#meet-the-team-btn:hover .icons-wrapper-3 {
+  margin-right: -10px;
+}
+
+#meet-the-team-btn .icons-wrapper-3 .scroll-icon-1-2,
+.scroll-icon-2-2 {
+  margin: -4px;
+  width: 11px;
+  height: 3.1px;
+  background-color: #af9644;
+  border-radius: 2px;
+}
+
+#meet-the-team-btn .icons-wrapper-3 .scroll-icon-1-2 {
+  transform: rotate(45deg);
+  margin-right: -1px;
+}
+
+#meet-the-team-btn .icons-wrapper-3 .scroll-icon-2-2 {
+  transform: rotate(-45deg);
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact,
+label,
+input[name="submit"] {
+  position: relative;
+}
+
+label {
+  margin-bottom: 20px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  font: 300 100%/1.2 Ubuntu, sans-serif;
+}
+
+input {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #e8e8e8;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  margin: 0 0 2rem;
+
+  outline: none;
+}
+input.invalid,
+textarea.invalid {
+  border-color: #d5144d;
+}
+textarea {
+  height: 9em;
+  background-color: #e8e8e8;
+}
+
+#check {
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+}
+
+.terms {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 370px) {
+}
+@media screen and (min-width: 550px) {
+
+  .hero .hero-title #consultation-btn{
+
+    display:flex
+  }
+
+  .grid-container-1-2 .partner-images {
+    width: 500px;
+    height: auto;
+    margin: auto;
+  }
+
+  .grid-container-1-2 .grid-items #img-2 {
+    width: 45%;
+    height: auto;
+  }
+
+  .grid-container-1-2 .partner-content {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    
+  }
+}
+@media screen and (min-width: 760px) {
+  .icons-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .icons-container .icon-wrap span {
+    width: 100%;
+    font-size:14px
+  
+  }
+  .icons-container .icon-wrap  {
+  
+    margin-right:1rem
+  }
+  
+}
+@media screen and (min-width: 1030px) {
+  .grid-container-1-2 {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+    padding-bottom: 100px;
+    gap: 30px;
+  
+  }
+
+  
+
+  .icons-container .icon-wrap{
+ 
+    margin-left:0;
+ 
+  }
+
+
+  .icons-container .icon-wrap span {
+    width: 100%;
+    margin-left: 1.5rem;
+
+  }
+
+
+
+}
+
+@media screen and (min-width: 1180px) {
+ 
+  .grid-container-1-2 p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,209 @@
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    letter-spacing: 0.05rem;
+  }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(../images/contact-header.jpg);
+  width: 100%;
+ 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .scroll-wrapper {
+  background-color: transparent;
+}
+
+.contact-hours {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-hours h3 {
+  width: 70%;
+  margin: auto;
+font-weight: lighter;
+  padding: 0.7rem;
+}
+
+.grid-container-1-2 {
+  width: 95%;
+  padding-bottom: 40px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  gap: 3rem;
+  text-align: left;
+  display: grid;
+  margin: auto;
+  margin-bottom:3rem
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact,
+label,
+input[name="submit"] {
+  position: relative;
+}
+
+label {
+  margin-bottom: 20px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  font: 300 100%/1.2 Ubuntu, sans-serif;
+}
+
+input {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #e8e8e8;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  margin: 0 0 2rem;
+
+  outline: none;
+}
+input.invalid,
+textarea.invalid {
+  border-color: #d5144d;
+}
+textarea {
+  height: 9em;
+  background-color: #e8e8e8;
+}
+
+#check {
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+}
+
+.terms {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#meet-the-team-btn {
+  display: flex;
+  justify-content: center;
+  border: 0.125rem solid #777777;
+  border-radius: 1.875rem;
+  width: 160px;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.002em;
+  line-height: 1;
+  color: #777777;
+  padding: 0.8rem;
+
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+#meet-the-team-btn:hover {
+  background-color: #af9644;
+  color: white;
+}
+
+.address {
+  background-color: #af9644;
+
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.address div {
+  padding-left: 1.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #c1a453;
+  width: 80%;
+  margin: auto;
+}
+
+.address div h4 {
+  margin: 0;
+}
+
+.address p {
+  padding-top: 10px;
+  margin-top: 0;
+  width: 50%;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 550px) {
+
+}
+@media screen and (min-width: 760px) {
+  .contact-hours {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-hours h3 {
+    max-width: 28%;
+  }
+
+  .contact-us-section {
+    width: 94%;
+    margin: auto;
+  }
+  .grid-container-1-2 {
+    width: 95%;
+    gap: 4.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  #contact {
+    width: 120%;
+  }
+
+  .address-wrapper {
+    width: 80%;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .hero {
+    height: 450px;
+  }
+
+ 
+  .hero .hero-title h1{
+    font-size:45px;
+    margin-bottom:0
+    }
+
+ .hero .hero-title h2{
+  font-size:18px
+  }
+}
